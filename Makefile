@@ -6,7 +6,7 @@ vendor:
 integration-test: docker-up vendor
 	@go test -v ./...
 
-unit-test:
+unit-test: vendor
 	@go test -v -short ./...
 
 docker-up:
