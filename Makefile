@@ -1,15 +1,12 @@
-.PHONY: vendor unit-test integration-test docker-up docker-down clear 
+.PHONY: dependency unit-test integration-test docker-up docker-down clear 
 
-vendor:
+dependency:
 	@go get -v ./...
 
-tidy: vendor
-	@go mod tidy
-
-integration-test: docker-up tidy
+integration-test: docker-up dependency
 	@go test -v ./...
 
-unit-test: tidy
+unit-test: dependency
 	@go test -v -short ./...
 
 docker-up:
