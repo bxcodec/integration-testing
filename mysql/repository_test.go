@@ -28,7 +28,7 @@ func TestCategorySuite(t *testing.T) {
 	}
 	dsn := os.Getenv("MYSQL_TEST_URL")
 	if dsn == "" {
-		dsn = "root:root-pass@tcp(localhost:3306)/testing?parseTime=1&loc=Asia%2FJakarta&charset=utf8mb4&collation=utf8mb4_unicode_ci"
+		dsn = "root:root-pass@tcp(localhost:33060)/testing?parseTime=1&loc=Asia%2FJakarta&charset=utf8mb4&collation=utf8mb4_unicode_ci"
 	}
 	categorySuite := &mysqlCategorySuiteTest{
 		MysqlSuite{
