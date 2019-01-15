@@ -10,6 +10,6 @@ before_install:
 - docker pull redis:5.0.2-alpine
 - docker pull mysql:5.7
 
-scripts:
-make integration-test
-make clear
+script:
+- make integration-test
+- make clear
