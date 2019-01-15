@@ -5,7 +5,9 @@ go:
 
 env:
   - GO111MODULE=on
- 
+
+install: true
+
 services:
   - docker
 

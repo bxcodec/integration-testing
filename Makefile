@@ -1,7 +1,7 @@
 .PHONY: vendor unit-test integration-test docker-up docker-down clear 
 
 vendor:
-	@go get -t -v ./...
+	@go get -v ./...
 
 tidy: vendor
 	@go mod tidy
@@ -18,4 +18,4 @@ docker-up:
 docker-down:
 	@docker-compose down
 
-clear: docker-down
+clear: docker-downa
