@@ -1,7 +1,7 @@
 # integration-testing
 
 This repository is just an example how to do integration testing in Golang with a real Database. For this repostiory case, I use MySQL and Redis.
-An explanation about this repository could be found in my Medium post [@imantumorang](https://medium.com/@imantumorang)
+An explanation about this repository could be found in my Medium post [@imantumorang](https://medium.com/@imantumorang)(_published soon_)
 
 
 ## How To Run The Test
