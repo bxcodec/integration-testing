@@ -15,4 +15,4 @@ docker-up:
 docker-down:
 	@docker-compose down
 
-clear: docker-downa
+clear: docker-down
