@@ -1,0 +1,20 @@
+language: go
+
+go:
+  - "1.11.x"
+
+env:
+  - GO111MODULE=on
+
+install: true
+
+services:
+  - docker
+
+before_install:
+- docker pull redis:5.0.2-alpine
+- docker pull mysql:5.7
+
+script:
+- make integration-test
+- make clear
